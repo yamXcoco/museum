@@ -49,7 +49,8 @@ a {
   width: 1120px;
   margin: 0 auto;
 }
-.content_01 h1 {
+.content_01 h1,
+.content_02 h1 {
   font-weight: 800;
   font-size: 30px;
 }
@@ -124,9 +125,8 @@ td {
   margin-top: 20px;
 }
 .section_04 button {
-  width: 60px;
-  height: 22px;
-  margin-right: 10px;
+  width: 70px;
+  height: 26px;
   font-size: 10px;
 }
 .btn_01 {
@@ -184,9 +184,9 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
-  padding-right: 130px;
+  padding-right: 230px;
 }
 .footer .right {
   text-align: right;
@@ -305,6 +305,7 @@ td {
 .section3_list {
   width: 1260px;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 .section3_list h1 {
   font-size: 30px;
@@ -314,14 +315,21 @@ td {
   border-bottom: 1px solid #535353;
 }
 .section3_list .list {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
   display: flex;
   border-bottom: 1px solid #535353;
 }
-.section3_list .list a {
+.section3_list .list p {
   font-size: 23px;
   color: #535353;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 .section3_list .list ul {
+  width: 230px;
+  margin: 0 auto;
+  /* justify-content: space-between; */
+}
+.section3_list .list ul li {
+  padding-bottom: 20px;
 }
