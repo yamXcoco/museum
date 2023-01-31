@@ -22,6 +22,15 @@ a {
 .head ul {
   display: flex;
 }
+.head_content{
+  position: relative;
+}
+.head_content .logo_page{
+  position: absolute;
+  top: 100px ;
+  left: 0;
+
+}
 .head_content,
 .head_content.content2 {
   width: 1460px;
