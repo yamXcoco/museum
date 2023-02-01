@@ -219,6 +219,10 @@ td {
   justify-content: space-between;
   padding: 60px 60px 0 60px;
 }
+.head_content.content2 .main_text .icon img:first-child{
+  margin: 3px;
+  height: 38px;
+}
 .main_text h2 {
   font-size: 50px;
   font-weight: 800;
