@@ -96,11 +96,30 @@ table {
   border-collapse: collapse;
 }
 .thead {
-  display: flex;
-}
-.thead p {
-  margin: 0 30px 10px 10px;
+  list-style: none;
+  float: left;
+  width: 150px;
   font-size: 26px;
+  font-weight: 500;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-align: center;  
+}
+.thead.on {
+  background-color: #000;
+  color: #fff;
+  font-weight: 400;
+}
+.tab_cont {
+  clear: both;
+}
+.tab_cont div {
+  display: none;
+  text-align: center;
+}
+
+.tab_cont div.on {
+  display: block;
 }
 th,
 td {

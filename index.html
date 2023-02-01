@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+script<!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>museum</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
@@ -60,36 +62,69 @@
       <div class="section_02">
         <div class="content_01">
           <h1>알립니다</h1>
-          <table>
-            <div class="thead">
+          <ul class="tab_title">
+            <li class="thead">
               <a href="#x">
                 <p>알림</p>
               </a>
-              <a href="#x">
-                <p>고시공고</p>
-              </a>
+            </li>
+            <li class="thead">
+                <a href="#x">
+                  <p>고시공고</p>
+                </a>
+            </li>
+          </ul>
+            <div class="tab_cont">
+              <div class="on">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>분실물 정보안내</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        특별전<외규장각 의궤, 그 고귀함의 의미>   전시해설 시간 변경
+                        안내
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>박물관 휴관안내</td>
+                    </tr>
+                    <tr>
+                      <td>분실물 정보안내</td>
+                    </tr>
+                    <tr>  
+                      <td>상설 전시관 서화실 임시 휴실안내</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                <table>
+                <tbody>
+                  <tr>
+                    <td>분실물 정보안내</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      특별전<외규장각 의궤, 그 고귀함의 의미>   전시해설 시간 변경
+                      안내
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>분실물 정보안내</td>
+                  </tr>
+                  <tr>
+                    <td>박물관 휴관안내</td>
+                  </tr>
+                  <tr>  
+                    <td>상설 전시관 서화실 임시 휴실안내</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+              
             </div>
-            <tbody>
-              <tr>
-                <td>분실물 정보안내</td>
-              </tr>
-              <tr>
-                <td>
-                  특별전<외규장각 의궤, 그 고귀함의 의미> 전시해설 시간 변경
-                  안내
-                </td>
-              </tr>
-              <tr>
-                <td>분실물 정보안내</td>
-              </tr>
-              <tr>
-                <td>박물관 휴관안내</td>
-              </tr>
-              <tr>
-                <td>상설 전시관 서화실 임시 휴실안내</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
         <div class="content_02">
           <img src="/img/index_04.png" alt="" />
@@ -324,5 +359,17 @@
         </li>
       </ul>
     </div>
+<script>
+  // 탭메뉴 만들기
+$(document).ready(function() {
+    $(".tab_title li").click(function() {
+      var idx = $(this).index();
+      $(".tab_title li").removeClass("on");
+      $(".tab_title li").eq(idx).addClass("on");
+      $(".tab_cont > div").hide();
+      $(".tab_cont > div").eq(idx).show();
+    })
+  });
+</script>
   </body>
 </html>
